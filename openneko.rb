@@ -5,21 +5,21 @@
 class Openneko < Formula
   desc "OpenNeko operator CLI — supervises the stack and manages plugins"
   homepage "https://getneko.app"
-  version "1.13.9"
+  version "1.14.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/open-neko/neko/releases/download/v1.13.9/openneko_1.13.9_darwin_amd64.tar.gz"
-      sha256 "8694bd241d7554868c093a34d71142c6002162bb18f80fb76c30d56feeba7b4e"
+      url "https://github.com/open-neko/neko/releases/download/v1.14.0/openneko_1.14.0_darwin_amd64.tar.gz"
+      sha256 "c2b04601ef9971ebcb23de3dfa65c7035487221be9df2c22c50f6683e8130b93"
 
       define_method(:install) do
         bin.install "openneko"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/open-neko/neko/releases/download/v1.13.9/openneko_1.13.9_darwin_arm64.tar.gz"
-      sha256 "922e7bab39447e92f20ed4579b86bc98a8043b85f86cd1efa31a3cf35088f4f4"
+      url "https://github.com/open-neko/neko/releases/download/v1.14.0/openneko_1.14.0_darwin_arm64.tar.gz"
+      sha256 "48a352e435759a223a248857b1e8cadfcc9c879ab3c868b7c384eb6d7bf0b4be"
 
       define_method(:install) do
         bin.install "openneko"
@@ -29,15 +29,15 @@ class Openneko < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-neko/neko/releases/download/v1.13.9/openneko_1.13.9_linux_amd64.tar.gz"
-      sha256 "635da74bb4507a17ce1904c1cf4cc8e821d44af76c866b7fdc0f9faa2fca3c2a"
+      url "https://github.com/open-neko/neko/releases/download/v1.14.0/openneko_1.14.0_linux_amd64.tar.gz"
+      sha256 "4260d8c22d14c87c91c91f01c4933529b3cd9a88e56e1df43cbbac85a81d544d"
       define_method(:install) do
         bin.install "openneko"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/open-neko/neko/releases/download/v1.13.9/openneko_1.13.9_linux_arm64.tar.gz"
-      sha256 "dd7e762c6263dc0ca4264573ae4d04524ec9d1b53d7d607b704307f4efb4854b"
+      url "https://github.com/open-neko/neko/releases/download/v1.14.0/openneko_1.14.0_linux_arm64.tar.gz"
+      sha256 "79283941e93484e772424739b817bac2171151a49f35c3bbb8f912cbe2115a0c"
       define_method(:install) do
         bin.install "openneko"
       end
