@@ -1,23 +1,23 @@
 cask "openneko" do
-  version "6.3.0"
+  version "6.3.1"
 
   on_macos do
     on_arm do
-      sha256 "9393a799f7149aba2b1cb24dcef22f951b010684c03b97542d0a00a85a59afc8"
+      sha256 "f8743271c664bf9c72b2636bcc33116c3f947840616d46c47a67230e3ac769cf"
       url "https://github.com/open-neko/openneko/releases/download/v#{version}/openneko-native_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "3d9d7e04b9b017cabdb7b3fd37c8a0614401a498e203015358b222de9716f61a"
+      sha256 "ef93118d357671d1760cd51874452b1c6538e16605492686f45c37bf3419797f"
       url "https://github.com/open-neko/openneko/releases/download/v#{version}/openneko-native_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6a68cc0604d27d92d80e4aff9f724c7edcdd62f49a5c06a0455ab7705bfe43e9"
+      sha256 "412ede8714a5b40421225f9b091aaa971ed6a2925f57e03ab398c40f39175070"
       url "https://github.com/open-neko/openneko/releases/download/v#{version}/openneko-native_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "834b883da40e7f65137d5cf37529cee6d0dc9a411c56a044bbaa0181a655f66a"
+      sha256 "4966756e06aeca8aad5f86fbbc81a4b2ae695823d34f402e02929f4b2f256102"
       url "https://github.com/open-neko/openneko/releases/download/v#{version}/openneko-native_#{version}_linux_amd64.tar.gz"
     end
   end
